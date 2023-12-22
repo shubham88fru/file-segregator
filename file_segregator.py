@@ -16,8 +16,8 @@ def organize_files(src_dir, dest_base_dir):
             shutil.move(os.path.join(src_dir, file), os.path.join(dest_dir, file))
 
 if __name__ == "__main__":
-    source_directory = "."  # Change this to the path of your source directory
-    destination_base_directory = "./dest"  # Change this to the path of your destination directory
+    source_directory = "."  #source directory
+    destination_base_directory = "./dest"  # destination directory
 
     organize_files(source_directory, destination_base_directory)
     print("Files organized successfully.")
@@ -42,9 +42,9 @@ def organize_files(src_dir, dest_base_dir, script_file):
             shutil.move(file_path, os.path.join(dest_dir, file))
 
 if __name__ == "__main__":
-    source_directory = "."  # Change this to the path of your source directory
-    destination_base_directory = "./dest"  # Change this to the path of your destination directory
-    script_file_name = "file_segregator.py"  # Change this to the actual name of your script file
+    source_directory = "."  #source directory
+    destination_base_directory = "./dest"  #destination directory
+    script_file_name = "file_segregator.py"  #script file
 
     organize_files(source_directory, destination_base_directory, script_file_name)
     print("Files organized successfully.")
@@ -85,8 +85,8 @@ def organize_files(src_dir, dest_base_dir, script_file):
     print(f"Files organized successfully. File counts written to {csv_file_path}.")
 
 if __name__ == "__main__":
-    source_directory = "."  # Change this to the path of your source directory
-    destination_base_directory = "./dest"  # Change this to the path of your destination directory
-    script_file_name = "file_segregator.py"  # Change this to the actual name of your script file
+    source_directory = "."  #source directory
+    destination_base_directory = "./dest"  # destination directory
+    script_file_name = "file_segregator.py"  #script file
 
     organize_files(source_directory, destination_base_directory, script_file_name)
